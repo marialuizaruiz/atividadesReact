@@ -93,7 +93,7 @@ function Contador() {
         <div className="gender-container">
         <img src={mulherIcon} alt="Ícone de mulher" className="person-img" />
           <img src={homemIcon} alt="Ícone de homem" className="person-img" />
-          <img src={recarregarIcon} alt="Ícone de recarregar" className="icon" style={{ position: 'absolute', top: 0, right: 0 }} onClick={resetCounters} />
+          <img src={recarregarIcon} alt="Ícone de recarregar" className="icon" style={{ position: 'absolute', top: 50, right: 20 }} onClick={resetCounters} />
         </div>
 
         <div className="control-icons">
