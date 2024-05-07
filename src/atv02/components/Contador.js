@@ -59,6 +59,7 @@ function Contador() {
         .container {
           text-align: center;
           margin-top: 50px;
+          padding-right: 20px;
         }
         .counter {
           font-size: 24px;
