@@ -55,38 +55,6 @@ function Contador() {
 
   return (
     <div>
-      <style>{`
-        .container {
-          text-align: center;
-          margin-top: 50px;
-          padding-right: 20px;
-        }
-        .counter {
-          font-size: 24px;
-          margin-bottom: 20px;
-        }
-        .icon {
-          width: 50px;
-          cursor: pointer;
-          margin: 5px;
-        }
-        .person-img {
-          width: 100px;
-        }
-        .control-icons {
-          display: flex;
-          justify-content: center;
-          margin-top: 20px;
-        }
-        .gender-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .gender {
-          margin: 0 10px;
-        }
-      `}</style>
       <div className="container">
         <h2 className="total-text">Total</h2>
         <h3 className="counter">{updateCounter()}</h3>
