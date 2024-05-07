@@ -12,6 +12,6 @@ export default function minhasRotas() {
             <Route path="/atv01" element={<Atv01 />} />
             <Route path="/atv02" element={<Atv02 />} />
         </Routes>
-        </BrowserRouter>
+        </BrowserRouter> 
     );
 }
