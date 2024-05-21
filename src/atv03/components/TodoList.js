@@ -35,6 +35,7 @@ export default function TodoList() {
             </>
 
             <>
+                <hr/>
                 <h1>{name}'s To Do List</h1>
             </>
 

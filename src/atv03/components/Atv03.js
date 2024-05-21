@@ -16,15 +16,15 @@ export default function Atv03() {
         <div class="container">
             <div class="alinhar">
                 <h1>Atividade 03</h1>
-                <TableOfContents />
-                <Gallery />
-                <Profile />
+                <TableOfContents /><hr/>
+                <Gallery /><hr/>
+                <Profile /><hr/>
                 <TodoList />
-                <Avatar />
-                <List />
-                <App />
-                <PackingList />
-                <TeaGathering />
+                <Avatar /><hr/>
+                <List /><hr/>
+                <App /><hr/>
+                <PackingList /><hr/>
+                <TeaGathering /><hr/>
                 <TeaSet />
             </div> 
         </div>
