@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 export function Profile() {
     return (
         <div style={{ display: 'inline-block', margin: '10px'}}>

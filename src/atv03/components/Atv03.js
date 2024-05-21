@@ -1,9 +1,13 @@
 import TableOfContents from './TableOfContents';
-import Profile from './Profile';
-import Gallery from './Gallery';
-// import { Profile } from './Gallery';
-import TodoList from './TodoList';
+import Gallery from "./Gallery";
+import List from "./List";
+import PackingList from "./PackingList";
+import Profile from "./Profile";
+import TeaGathering from "./TeaGathering";
+import TeaSet from "./TeaSet";
+import TodoList from "./TodoList";
 import Avatar from './Avatar';
+import App from './App';
 import { Link } from 'react-router-dom';
 
 export default function Atv03() {
@@ -13,10 +17,15 @@ export default function Atv03() {
             <div class="alinhar">
                 <h1>Atividade 03</h1>
                 <TableOfContents />
-                <Profile />
                 <Gallery />
+                <Profile />
                 <TodoList />
                 <Avatar />
+                <List />
+                <App />
+                <PackingList />
+                <TeaGathering />
+                <TeaSet />
             </div> 
         </div>
         </>

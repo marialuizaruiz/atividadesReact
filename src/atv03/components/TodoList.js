@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const today = new Date();
 
 const person = {
@@ -61,3 +59,5 @@ export default function TodoList() {
         </div> 
     );
 }
+
+

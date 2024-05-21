@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Avatar() {
-    const avatar = 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Gregorio_Y._Zara_NAST.jpg';
-    const description = 'Gregorio Y. Zara';
+    
+    const avatar = '';
+    const description = '';
     return (
-        <img
-            className='avatar'
-            src={avatar}
-            alt={description}
+        <img 
+        className="avatar" 
+        src={avatar} 
+        alt={description}
         />
     );
 }
-
