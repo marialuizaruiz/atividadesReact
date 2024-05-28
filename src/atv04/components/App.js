@@ -55,40 +55,23 @@
 // }
 //----------------------------------------------------------
 
-import { sculptureList } from "./data.js";
-import { useState } from "react";
+import { useState, useEffect } from 'react';
+import Clock from './Clock';
 
-export default function Gallery() {
-    const [index, setIndex] = useState(0);
-    const [showMore, setShowMore] = useState(false);
+function useTime() {
+    const [time, setTime] = useState(() => new Date());
+    useEffect(() => {
+        const id = setInterval(() => {
+            setTime(new Date());
+        }, 1000);
+        return () => clearInterval(id);
+    }, []);
+    return time;
+}
 
-    function handleNextClick() {
-        setIndex(index + 1);
-    }
-
-    function handleMoreClick() {
-        setShowMore(!showMore);
-    }
-
-    let sculpture = sculptureList[index];
+export default function App() {
+    const time = useTime();
     return (
-        <>
-            <button onClick={handleNextClick}>
-                Next
-            </button>
-            <h2>
-                <i>{sculpture.name}</i>
-                by {sculpture.artist}
-            </h2>
-            <h3>
-                ({index + 1} of {sculpture.length})
-            </h3>
-            <button onClick={handleMoreClick}>
-                {showMore ? 'Hide' : 'Show'} details
-            </button>
-            <br/><br/>
-            {showMore && <p>{sculpture.description}</p>}
-            <img src={sculpture.url} alt={sculpture.alt}></img>
-        </>
+        <Clock time={time.toLocaleTimeString()} />
     );
 }
